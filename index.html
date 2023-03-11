@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaS/script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="list borde">
+        <div class="date">
+            <div class="dateR">
+                <div id="dateNum"></div>
+                <div>
+                    <div id="dateMes"></div>
+                    <div id="dateAnio"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        <form onsubmit="addNewTask(event)" >
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="borde">
+            <button type="submit" class="addBotonTarea">Agregar</button>
+            <button type="button" class="botonOrdenar borde" onclick="renderOrderedTasks()">Ordenar</button>
+        </form>
+        <div id="contenedo_Tarea"></div>
+    </div>
+</body>
+</html>

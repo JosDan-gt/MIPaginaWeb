@@ -1,0 +1,142 @@
+:root {
+    --primario: #A5C882;
+    --secundario: #D33F49;
+    --secundario2: #932d34;
+    --blanco: #fff;
+    --negro: #000;
+    --blanco2: #e7e7e7;
+    --gris: #888888;
+    --blancoSec: #dbdbdb;
+}
+
+body {
+    font-family: 'Staatliches', cursive;
+    margin: 5rem;
+    height: 100rem;
+    background-color: var(--secundario);
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.borde {
+    border-radius: 10px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--gris);
+    width: 100%;
+    max-width: 35rem;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dateR {
+    display: flex;
+    align-items: center;
+}
+
+#dateNum {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+#dateMes,
+#dateNum,
+#dateText  {
+    font-weight: bold;
+}
+
+#dateMes,
+#dateAnio {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: 3fr, 1fr;
+    column-gap: 1rem;
+
+
+}
+
+input {
+    border: none;
+    margin: 5px;
+    padding-left: 6rem;
+    background-color: var(--blanco2);
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+.addBotonTarea,
+.botonOrdenar {
+    font-family: 'Staatliches', cursive;
+    border: none;
+    margin: 5px;
+    padding: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addBotonTarea {
+    
+    border-radius: 13px;
+    font-size: 18px;
+    background-color: var(--blanco2);
+}
+
+.botonOrdenar {
+    font-size: 18px;
+    display: grid;
+    grid-column: 2 / 3;
+    background-color: var(--secundario);
+    color: var(--blanco);
+}
+
+
+.addBotonTarea:hover {
+
+    background-color: var(--blancoSec);
+}
+
+.botonOrdenar:hover {
+
+    background-color: var(--secundario2);
+}
+
+
+
+.task {
+    font-family: 'Staatliches', cursive;
+    background-color: var(--primario);
+    display: grid;
+    padding: 15px;
+    margin-top: 30px;
+    color: var(--blanco);
+    cursor: pointer;
+    
+}
+
+.done {
+    background-color: var(--blanco2);
+    text-decoration: line-through;
+    color: var(--blanco);
+}
