@@ -78,7 +78,7 @@ form {
 input {
     border: none;
     margin: 5px;
-    padding-left: 6rem;
+    padding-left: 1rem;
     background-color: var(--blanco2);
 }
 
